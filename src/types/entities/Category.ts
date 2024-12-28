@@ -1,0 +1,48 @@
+export interface CategoryOption {
+    id: string;
+    name: string;
+  }
+  
+  export const categories: CategoryOption[] = [
+    { id: "all", name: "All" },
+    { id: "music", name: "Music" },
+    { id: "movies", name: "Movies" },
+    { id: "sports", name: "Sports" },
+    { id: "education", name: "Education" },
+    { id: "technology", name: "Technology" },
+    { id: "gaming", name: "Gaming" },
+    { id: "health", name: "Health & Fitness" },
+    { id: "fashion", name: "Fashion" },
+    { id: "travel", name: "Travel" },
+    { id: "news", name: "News" },
+    { id: "food", name: "Food & Drink" },
+    { id: "art", name: "Art & Design" },
+    { id: "photography", name: "Photography" },
+    { id: "literature", name: "Literature" },
+    { id: "business", name: "Business" },
+    { id: "finance", name: "Finance" },
+    { id: "science", name: "Science" },
+    { id: "nature", name: "Nature & Environment" },
+    { id: "history", name: "History" },
+    { id: "comedy", name: "Comedy" },
+    { id: "politics", name: "Politics" },
+    { id: "relationships", name: "Relationships" },
+    { id: "automotive", name: "Automotive" },
+    { id: "diy", name: "DIY & Crafts" },
+    { id: "fitness", name: "Fitness & Exercise" },
+    { id: "home", name: "Home & Garden" },
+    { id: "parenting", name: "Parenting" },
+    { id: "pets", name: "Pets & Animals" },
+    { id: "spirituality", name: "Spirituality & Religion" },
+    { id: "technology", name: "Tech Reviews" },
+    { id: "events", name: "Events & Festivals" },
+    { id: "culture", name: "Culture & Traditions" },
+    { id: "anime", name: "Anime & Manga" },
+    { id: "horror", name: "Horror" },
+    { id: "adventure", name: "Adventure" },
+    { id: "productivity", name: "Productivity" },
+    { id: "mentalhealth", name: "Mental Health" },
+    { id: "wildlife", name: "Wildlife" },
+    { id: "luxury", name: "Luxury" },
+  ];
+  

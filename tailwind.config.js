@@ -7,11 +7,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#e3fdff",
+  
         primary: "#49e8ff"
+      },
+      backgroundColor: {
+        body: "#181818",
+        primary: "#212121",
+        primaryHover: "#3d3d3d",
+      },
+      screens: {
+        xxl: "1536px"
       }
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 }
 

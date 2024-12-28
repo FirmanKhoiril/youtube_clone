@@ -1,8 +1,7 @@
-import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <nav className='w-full px-4 py-2 rounded-xl bg-primary'>Navbar</nav>
   )
 }
 

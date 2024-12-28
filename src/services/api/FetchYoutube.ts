@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const Base_url = "https://youtube-v31.p.rapidapi.com/";
+const Base_url = "https://youtube-v31.p.rapidapi.com";
 
 const options = {
   headers: {
@@ -9,3 +9,13 @@ const options = {
   },
 };
 
+const FetchYoutube = async (url: string) => {
+  const { data } = await axios(`${Base_url}/${url}`, options);
+  return data;
+};
+
+export const getTrendingYoutube = async () => {
+  return await FetchYoutube(
+    "search?q=Programming&part=snippet,id&regionCode=US&maxResults=50&order=date"
+  );
+};
