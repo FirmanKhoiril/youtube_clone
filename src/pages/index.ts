@@ -5,6 +5,10 @@ import ChannelDetail from './ChannelDetail'
 import Shorts from "./Shorts";
 import History from "./History";
 import NotFound from "./NotFound";
+import LikedVideos from "./LikedVideos";
+import Subscription from "./Subscription";
+import WatchLater from "./WatchLater";
+import Trending from "./Trending";
 
 export {
     VideoDetail,
@@ -13,5 +17,9 @@ export {
     ChannelDetail,
     Shorts,
     History,
-    NotFound
+    NotFound,
+    LikedVideos,
+    Subscription,
+    WatchLater,
+    Trending
 }

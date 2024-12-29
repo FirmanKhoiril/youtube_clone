@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
-import { Home, Search, ChannelDetail, NotFound, Shorts, History, VideoDetail } from "../pages";
+import { Home, Search, ChannelDetail, NotFound, Shorts, History, VideoDetail, LikedVideos, WatchLater, Subscription, Trending } from "../pages";
 
 export const router = createBrowserRouter([
     {
@@ -25,12 +25,28 @@ export const router = createBrowserRouter([
           element: <Shorts />,
         },
         {
+          path: "/subscription",
+          element: <Subscription />,
+        },
+        {
           path: "/channel/:id",
           element: <ChannelDetail />,
         },
         {
           path: "/feed/history",
           element: <History />,
+        },
+        {
+          path: "/feed/trending",
+          element: <Trending />,
+        },
+        {
+          path: "/feed/liked-videos",
+          element: <LikedVideos />,
+        },
+        {
+          path: "/feed/watch-later",
+          element: <WatchLater />,
         },
         {
           path: "*",
