@@ -14,6 +14,8 @@ export default {
         body: "#181818",
         primary: "#212121",
         primaryHover: "#3d3d3d",
+        secondary: "rgb(255 255 255 / 0.1)",
+        secondaryHover: "rgb(255 255 255 / 0.2)"
       },
       screens: {
         xxl: "1536px"

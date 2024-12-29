@@ -24,7 +24,7 @@ const CardList = () => {
   }
 
   return (
-    <div className="grid grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-4  gap-4">
       {data?.contents?.length > 0 ? (
         data.contents.map((item: TVideoData) => (
           <Video {...item.video} />
