@@ -1,11 +1,11 @@
-import { create } from 'zustand'
+import { create } from "zustand";
 
 type CategoryStore = {
-  category: string,
-  changeCategory: () => void
-}
+  categoryValue: string;
+  changeCategory: (newCategory: string) => void;
+};
 
-export const useCategoryStore = create<CategoryStore>()((set) => ({
-  category: "All",
-  changeCategory: () => set((state) => ({ category: state.category })),
-}))
+export const useCategoryStore = create<CategoryStore>((set) => ({
+  categoryValue: "All",
+  changeCategory: (newCategory) => set(() => ({ categoryValue: newCategory })),
+}));

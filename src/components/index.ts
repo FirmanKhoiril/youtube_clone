@@ -1,10 +1,12 @@
 import CardList from "./card/CardList";
 import Category from "./Category";
 import ChannelBanner from "./channel/ChannelBanner";
-import ChannelDetail from "./channel/ChannelDetail";
 import ChannelVideo from "./channel/ChannelVideo";
 import CommentList from "./comment/CommentList";
+import Error from "./Error";
+import Loading from "./Loading";
 import Navbar from "./Navbar";
+import NotFound from "./NotFound";
 import SearchBar from "./SearchBar";
 import Sidebar from "./Sidebar";
 
@@ -15,7 +17,9 @@ export {
     Sidebar,
     CardList,
     ChannelBanner,
-    ChannelDetail,
     ChannelVideo,
     CommentList,
+    Error,
+    Loading,
+    NotFound,
 }

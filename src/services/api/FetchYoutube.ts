@@ -14,8 +14,8 @@ const FetchYoutube = async (url: string) => {
   return data;
 };
 
-export const getTrendingYoutube = async () => {
+export const getTrendingYoutube = async (categoryValue: string) => {
   return await FetchYoutube(
-    "search?q=Programming&part=snippet,id&regionCode=US&maxResults=50&order=date"
+    `search?q=${categoryValue === "All" ? "Programming" : categoryValue}&part=snippet,id&regionCode=US&maxResults=50&order=date`
   );
 };

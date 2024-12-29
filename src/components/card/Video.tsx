@@ -13,7 +13,7 @@ const Video = ({
   return (
     <div
       key={videoId}
-      className="rounded-xl hover:bg-primaryHover transition cursor-pointer bg-primary p-4 flex flex-col gap-3 overflow-hidden"
+      className="rounded-xl hover:bg-primaryHover transition cursor-pointer bg-primary p-4 flex flex-col gap-2 overflow-hidden"
     >
       <div className="relative">
         <img
@@ -21,7 +21,7 @@ const Video = ({
           src={thumbnails?.[0]?.url || "https://placehold.co/500x280"}
           alt={title}
         />
-        <div className="absolute top-[174px] left-6">
+        <div className="absolute top-[170px] left-6">
           <img
             src={
               author?.avatar?.[0]?.url ||
